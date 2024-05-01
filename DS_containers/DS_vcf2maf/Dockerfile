@@ -1,6 +1,6 @@
 # DS_VCF2MAF
 FROM continuumio/miniconda3:4.10.3
-ENV VEP_VERSION=104
+ENV VEP_VERSION=102
 RUN conda install -y -c bioconda -c conda-forge samtools=1.12 pyfaidx \
     && apt-get update \
     && apt-get install -y cpanminus build-essential zlib1g-dev \
