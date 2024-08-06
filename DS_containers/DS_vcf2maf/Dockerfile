@@ -1,6 +1,6 @@
 # DS_VCF2MAF
 FROM continuumio/miniconda3:4.10.3
-ENV VEP_VERSION=102
+ENV VEP_VERSION=112
 RUN conda install -y -c bioconda -c conda-forge samtools=1.12 pyfaidx \
     && apt-get update \
     && apt-get install -y cpanminus build-essential zlib1g-dev \
@@ -15,5 +15,5 @@ RUN conda install -y -c bioconda -c conda-forge samtools=1.12 pyfaidx \
     && cd /programs \
     && mkdir vcf2maf \
     && cd vcf2maf \
-    && curl -L -o mskcc-vcf2maf.tar.gz https://api.github.com/repos/mskcc/vcf2maf/tarball/v1.6.21 \
+    && curl -L -o mskcc-vcf2maf.tar.gz https://api.github.com/repos/mskcc/vcf2maf/tarball/v1.6.22 \
     && tar -zxf mskcc-vcf2maf.tar.gz
