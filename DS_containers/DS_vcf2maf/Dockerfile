@@ -16,4 +16,4 @@ RUN conda install -y -c bioconda -c conda-forge samtools=1.12 pyfaidx \
     && mkdir vcf2maf \
     && cd vcf2maf \
     && curl -L -o mskcc-vcf2maf.tar.gz https://api.github.com/repos/mskcc/vcf2maf/tarball/v1.6.22 \
-    && tar -zxf mskcc-vcf2maf.tar.gz
+    && tar -zxf mskcc-vcf2maf.tar.gz 
